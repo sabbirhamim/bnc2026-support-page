@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BNC 2026 Support</title>
+<style>
+  :root {
+    --bg: #FAF7F1;
+    --surface: #FFFFFF;
+    --border: #EAE6DA;
+    --fg: #1A1A1A;
+    --fg-muted: #6B6A62;
+    --primary: #0E2E52;
+    --accent: #5B7F1E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171B;
+      --surface: #1E2126;
+      --border: #2C2F35;
+      --fg: #F2F1ED;
+      --fg-muted: #A6A59C;
+      --primary: #8FB4E8;
+      --accent: #7FA83A;
+      color-scheme: dark;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: 56px 16px 80px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+
+  .masthead { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .mark {
+    width: 40px; height: 40px; border-radius: 999px; flex: none;
+    background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 17px;
+  }
+  .masthead-text .conf { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 15px; color: var(--primary); }
+  .masthead-text .org { font-size: 12.5px; color: var(--fg-muted); }
+
+  h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 38px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 28px 0 6px;
+  }
+  .updated { color: var(--fg-muted); font-size: 13px; margin-bottom: 36px; }
+
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 18px 20px;
+    font-size: 15.5px;
+    line-height: 1.55;
+    margin-bottom: 40px;
+  }
+  .summary strong { color: var(--primary); }
+
+  section { margin-bottom: 36px; }
+  .eyebrow {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  p { line-height: 1.65; font-size: 15px; margin: 0 0 12px; max-width: 62ch; }
+  ol, ul { margin: 0 0 12px; padding-left: 20px; }
+  li { line-height: 1.65; font-size: 15px; margin-bottom: 8px; max-width: 60ch; }
+  li::marker { color: var(--accent); }
+
+  .item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 10px;
+  }
+  .item .label { font-weight: 600; color: var(--primary); }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 48px;
+    padding-top: 20px;
+    color: var(--fg-muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <div class="mark">BNC</div>
+    <div class="masthead-text">
+      <div class="conf">Beyond Nature and Culture 2026</div>
+      <div class="org">Dept. of English, Daffodil International University</div>
+    </div>
+  </div>
+
+  <h1>Support</h1>
+  <div class="updated">Last updated: November 19, 2026</div>
+
+  <div class="summary">
+    <strong>In short:</strong> the fastest way to reach the organizing team is the "BNC Support" chat built into the app itself.
+  </div>
+
+  <section>
+    <div class="eyebrow">In the app</div>
+    <ol>
+      <li>Open the BNC 2026 app.</li>
+      <li>Tap the <strong>BNC Support</strong> icon in the header, or the "BNC Support" card on the Home screen.</li>
+      <li>The first time, enter your email address to start a private conversation -- no password or account needed.</li>
+      <li>Send your question. An organizer will reply in the same conversation; reopening the app returns you straight to it.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="eyebrow">Common questions</div>
+    <div class="item">
+      <span class="label">The app isn't loading schedule/speaker info</span><br>
+      Check your internet connection and pull down to refresh. If it persists, use BNC Support in the app to report it.
+    </div>
+    <div class="item">
+      <span class="label">I'm not receiving notifications</span><br>
+      Make sure notifications are allowed for the app in your device's system settings, and that you have an internet connection.
+    </div>
+    <div class="item">
+      <span class="label">I have a question about the conference itself</span> (registration, venue, schedule changes)<br>
+      Use BNC Support in the app, or the contact details on the official conference website.
+    </div>
+  </section>
+
+  <footer>
+    This page is the public Support URL for the BNC 2026 app's App Store / Play Store listing. For app issues, use the in-app "BNC Support" chat above; for conference logistics, contact the Department of English, Daffodil International University via the official conference website.
+  </footer>
+</div>
+</body>
+</html>
